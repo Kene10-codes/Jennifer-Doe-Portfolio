@@ -9,6 +9,13 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="./css/style.css">
 
+     <!--Owl Carousel CSS CDN-->
+     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+     <!--Iconify Design CDN-->
+     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+     
     <title>Jennifer Doe | Frontend Developer</title>
 </head>
 <body>
@@ -22,53 +29,105 @@
     </nav>
 
     <section id="header">
-       <div class="header__containter">
-           <h1>Front-end web developer</h1>
-           <h2>Jennifer Doe</h2>
-           <p>I am currenty a Front-end web developer with 5+ 
+       <div class="header__container">
+        <div class="header__body">
+           <h1 class="header__heading1">Front-end web developer</h1>
+           <h2 class="header__heading2">Jennifer Doe</h2>
+           <p class="header__para">I am currenty a Front-end web developer with 5+ 
                experience seeking to  expand my technical skills. 
                Feel free to browse through and check out my previous works.
            </p>
-           <div>
-               <p><span><i class="fas fa-envelope-square"></i></span> jenniferdoe@gmail.com</p>
-               <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
-           </div>
-           <div>
+           <div class="header__icons">
+            <p><span><i class="fas fa-envelope-square"></i></span> jenniferdoe@gmail.com</p>
+            <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
+        </div>
+        </div>
+           
+           <div class="header__img">
                <img src="./img/jennifer-doe.png" alt="">
            </div>
        </div>
 
     </section>
 
-    <section id="aboutMe__sect">
-        <div>
-            <h2>ABOUT ME</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit urna vel condimentum varius in enim aliquam. Massa varius posuere nisl amet nunc non odio. Cum sollicitudin
+    <section id="aboutme__sect">
+        <div class="aboutme__container">
+         <div class="aboutme__body">
+            <h2 class="aboutme__heading2">ABOUT ME</h2>
+            <p class="aboutme__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit urna vel condimentum varius in enim aliquam. Massa varius posuere nisl amet nunc non odio. Cum sollicitudin
                  commodo vel integer morbi tempor. Nunc erat facilisis penatibus </p>
-            <button>Download Resume</button>
+            <button class="aboutme__btn">Download Resume</button>
+         </div>
         </div>
-
     </section>
 
     <section id="service__sect">
-        <div>
-            <h2>MY SERVICES</h2>
+        <div class="service__container">
+         <div class="service__body">
+            <h2 class="service__heading2">MY SERVICES</h2>
+           <div class="services">
+               <div>
+                   <span class="iconify" data-icon="bi:code-slash" data-inline="false"></span>
+                    <h3>Frontend Development</h3>
+               </div>
 
+               <div>
+                    <span class="iconify" data-icon="feather:settings" data-inline="false"></span>
+                    <h3>Product Management</h3>
+               </div>
+
+               <div>
+                   <span class="iconify" data-icon="ic:baseline-design-services" data-inline="false"></span>
+                    <h3>Web Design</h3>
+               </div>
+               
+           </div>
+         </div>
         </div>
     </section>
 
     <section id="project__sect">
-        <div>
-            <h2>FEATURED PROJECTS</h2>
+        <div class="project__container">
+          <div class="project__body">
+            <h2 class="project__heading2">FEATURED PROJECTS</h2>
+            <p class="project__para">All <span>Javascript</span> <span>ReactJS</span></p>
+        
+            <!-- Set up your HTML -->
+         <div class="owl-carousel">
+            <div> 
+                <h3>Savannah</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <i class="fab fa-github"></i>
+            </div>
+            <div>
+                <h3>MyBank</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, tortor tincidunt tellus sagittis neque</p>
+                <i class="fab fa-github"></i>
+            </div>
+            <div>
+                <h3>WeFarm</h3> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, tortor tincidunt tellus sagittis neque</p>
+                <i class="fab fa-github"></i>
+            </div>
+            <div> 
+                <h3>Savannah</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <i class="fab fa-github"></i>
+            </div>
+          </div>
+         </div>
         </div>
+
+        
 
     </section>
 
     <section id="contact__sect">
         <div class="contact__container">
-            <h2>REACH OUT</h2>
-            <p>Have a question or want to work together?</p>
-            <div>
+          <div class="contact__body">
+            <h2 class="contact__heading2">REACH OUT</h2>
+            <p class="contact__para">Have a question or want to work together?</p>
+            <div class="form__wrapper">
                 <form>
                     <div>
                         <input type="text" name="fullname" id="fullName" placeholder="YOUR NAME">
@@ -93,23 +152,27 @@
                 </form>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fames etiam nulla pharetra, dui aliquam nascetur.</p>
+            <p class="contact__para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fames etiam nulla pharetra, dui aliquam nascetur.</p>
             
             <div>
               <p><span><i class="fas fa-envelope-square"></i></span> jenniferdoe@gmail.com</p>
               <p><span><i class="fas fa-phone"></i></span> +25476752595747</p>
-              <p><span></span> Nairobi, Kenya</p>
+              <p><span><i class="fas fa-map-marker-alt"></i></span> Nairobi, Kenya</p>
             </div>
+          </div>
         </div>
 
     </section>
 
     <div class="footer">
-       <span></span>  <span></span>   <span></span>   <span></span>
+       <span><i class="fab fa-github"></i></span>  <span><i class="fab fa-twitter"></i></span>   <span><i class="fab fa-linkedin"></i></span>   <span><i class="fab fa-dribbble"></i></span>
         <p>&copy;2020 by Jennifer Doe</p>
     </div>
 
     <!--Custom Javascript-->
+    <!--Owl Carousel Javascript-->
     <script src="./js/script.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 </html>

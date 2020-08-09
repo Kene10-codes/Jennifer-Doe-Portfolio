@@ -8,3 +8,8 @@ showNavBar = () => {
         topNav.className = "topNavBar";
     }
 }
+
+//Owl Carousel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});

@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="./css/style.css">
 
      <!--Owl Carousel CSS CDN-->
-     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+     <link rel="stylesheet" href="owl.carousel.min.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+
+
+     <!--Jquery CDN-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
      <!--Iconify Design CDN-->
      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -31,9 +35,9 @@
     <section id="header">
        <div class="header__container">
         <div class="header__body">
-           <h1 class="header__heading1">Front-end web developer</h1>
+           <h1 class="header__heading1">Frontend Web Developer</h1>
            <h2 class="header__heading2">Jennifer Doe</h2>
-           <p class="header__para">I am currenty a Front-end web developer with 5+ 
+           <p class="header__para">I am currently a Frontend web developer with 5+ 
                experience seeking to  expand my technical skills. 
                Feel free to browse through and check out my previous works.
            </p>
@@ -65,7 +69,7 @@
         <div class="service__container">
          <div class="service__body">
             <h2 class="service__heading2">MY SERVICES</h2>
-           <div class="services">
+             <div class="services">
                <div>
                    <span class="iconify" data-icon="bi:code-slash" data-inline="false"></span>
                     <h3>Frontend Development</h3>
@@ -93,32 +97,52 @@
             <p class="project__para">All <span>Javascript</span> <span>ReactJS</span></p>
         
             <!-- Set up your HTML -->
-         <div class="owl-carousel">
-            <div> 
+        <div slider__wrapper>
+         <div class="owl-carousel owl-theme">
+            <div class="item"> 
                 <h3>Savannah</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur </p>
-                <i class="fab fa-github"></i>
+                <div class="item__icon">
+                    <i class="fab fa-github"></i> 
+                </div>
+                <div class="item__icon2">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
             </div>
-            <div>
+            <div class="item">
                 <h3>MyBank</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, tortor tincidunt tellus sagittis neque</p>
-                <i class="fab fa-github"></i>
+                <div class="item__icon">
+                    <i class="fab fa-github"></i> 
+                </div>
+                <div class="item__icon2">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
             </div>
-            <div>
+            <div class="item">
                 <h3>WeFarm</h3> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, tortor tincidunt tellus sagittis neque</p>
-                <i class="fab fa-github"></i>
+                <div class="item__icon">
+                    <i class="fab fa-github"></i> 
+                </div>
             </div>
-            <div> 
+            <div class="item"> 
                 <h3>Savannah</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur </p>
-                <i class="fab fa-github"></i>
+                <div class="item__icon">
+                    <i class="fab fa-github"></i> 
+                </div>
+                <div class="item__icon2">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+
+                
+                
             </div>
           </div>
          </div>
-        </div>
-
-        
+         </div>
+        </div>     
 
     </section>
 
@@ -154,10 +178,10 @@
 
             <p class="contact__para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fames etiam nulla pharetra, dui aliquam nascetur.</p>
             
-            <div>
-              <p><span><i class="fas fa-envelope-square"></i></span> jenniferdoe@gmail.com</p>
-              <p><span><i class="fas fa-phone"></i></span> +25476752595747</p>
-              <p><span><i class="fas fa-map-marker-alt"></i></span> Nairobi, Kenya</p>
+            <div class="contact__info">
+              <p><span><i class="fas fa-envelope-square"></i></span>jenniferdoe@gmail.com</p>
+              <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
+              <p><span><i class="fas fa-map-marker-alt"></i></span>Nairobi, Kenya</p>
             </div>
           </div>
         </div>
@@ -165,14 +189,16 @@
     </section>
 
     <div class="footer">
+        <div class="footer__icon">
        <span><i class="fab fa-github"></i></span>  <span><i class="fab fa-twitter"></i></span>   <span><i class="fab fa-linkedin"></i></span>   <span><i class="fab fa-dribbble"></i></span>
-        <p>&copy;2020 by Jennifer Doe</p>
+    </div>
+       <p class="footer__para">&copy;2020 by <span class="footer__authorname">Jennifer Doe</span> </p>
     </div>
 
     <!--Custom Javascript-->
     <!--Owl Carousel Javascript-->
     <script src="./js/script.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="jquery.js"></script> 
+    <script src="owl.carousel.min.js"></script>
 </body>
 </html>

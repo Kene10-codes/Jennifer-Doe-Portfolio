@@ -9,7 +9,3 @@ showNavBar = () => {
     }
 }
 
-//Owl Carousel
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});

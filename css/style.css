@@ -42,7 +42,7 @@ body {
 
 .header__body {
     background: #0F0F0F;
-    padding: 10px 20px;
+    padding: 50px 20px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -55,9 +55,10 @@ body {
     font-family: inherit;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.2rem;
     position: relative;
     padding: 10px 0;
+   
     
 }
 
@@ -65,7 +66,7 @@ body {
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #FFFFFF;
     padding: 10px 0;
 
@@ -78,6 +79,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.5;
+    word-spacing: 2px;
 
 }
 
@@ -114,7 +116,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 20px 10px; 
     
 }
 
@@ -171,7 +173,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 20px;  
+    padding: 20px 10px;   
 }
 
 .service__heading2 {
@@ -179,8 +181,35 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
+    margin-bottom: 20px;
     text-align: center;
+
+}
+
+.services {
+    display: flex;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.services h3 {
+    color: #ffffff;
+    font-size: 26px;
+    padding: 23px 0;
+
+}
+
+.services .iconify {
+    color: #9B51E0;
+    font-size: 2.5rem;
+    margin: 20px 0;
 }
 
 /*project section css*/
@@ -201,6 +230,7 @@ body {
     font-weight: bold;
     font-size: 32px;
     color: #000000;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -208,19 +238,73 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 20px;  
+    padding: 20px 10px;   
 }
 
+.project__para {
+    text-align: center;
+    padding: 10px 0;
+    word-spacing: 20px;
+}
+.slider__wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.item {
+    height: 250px;
+    background: #0F0F0F;
+    box-sizing: border-box;
+    position: relative;
+}
+.item h3 {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.item > p {
+    color: #ffffff;
+    padding: 10px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.item .item__icon .fab, .fas {
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.item__icon {
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: absolute;
+    bottom: 10;
+    left: 15;
+}
+.item__icon2 {
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: absolute;
+    bottom: 10;
+    right: 15;
+}
 /*contact section css*/
 .contact__container {
-    margin-bottom: 50px;   
+    margin-bottom: 50px; 
+    text-align: center;  
 }
 
 .contact__body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 20px;  
+    padding: 20px 10px;  
 }
 
 .contact__heading2 {
@@ -229,24 +313,28 @@ body {
     font-weight: bold;
     font-size: 32px;
     color: #000000;
+    margin-bottom: 10px;
     text-align: center;
+    
 }
 
 .contact__para {
-    text-align: center;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    color: #000000;
     line-height: 18px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #000000;
+    padding: 5px 0;
+    
 }
 /* .form__wrapper {
-    background-color: green;
-} */
+    margin: 0 auto;
+}  */
 form {
     padding: 20px;
 }
@@ -266,6 +354,7 @@ textarea {
     border: 1px solid #A1A4B1;
     box-sizing: border-box;
     border-radius: 4px;
+    font-family: inherit;
     font-size: 14px;
     height: 45vh;
     margin: 15px 0;
@@ -292,15 +381,68 @@ input[type="submit"] {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     color: #000000;
     margin-bottom: 10px;
+    text-align: left;
 
 }
 
+.contact__info {
+    margin: 20px 0;
+    padding: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
 
-@media screen and (max-width: 600px) {
+.contact__info > p {
+    text-align: left;
+}
+
+.contact__info .fas {
+    color: #9B51E0;
+    font-size: 18px;
+    margin: 15px 15px 0 0; 
+
+}
+
+/*footer css*/
+
+.footer {
+    background: #0F0F0F;
+    height: 154px;    
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer .fab {
+    color: #ffffff;
+    font-size: 25px;
+    padding-right: 25px;  
+    margin: 0 0 15px 0;
+    
+}
+
+.footer__para {
+    color: #ffffff;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
     .topNavBar a{
         display: none;
     }
@@ -340,5 +482,10 @@ input[type="submit"] {
         float: none;
         text-align: center;
     }
+
+}
+
+/*media query for desktop view*/
+@media screen and (min-width: 992px) {
 
 }

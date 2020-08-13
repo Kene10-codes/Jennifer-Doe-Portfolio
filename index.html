@@ -24,11 +24,13 @@
 </head>
 <body>
     <nav class="topNavBar" id="myTopNav">
+       <!-- <a href="#" class="developer__name">JENNIFER DOE</a> -->
        <a href="#" class="active">HOME</a>
-       <a href="#">ABOUT ME</a>
-       <a href="#">MY SERVICES</a>
-       <a href="#">PROJECTS</a>
-       <a href="#">CONTACT</a>
+       <a href="#" class="nav2">ABOUT ME</a>
+       <a href="#" class="nav3">MY SERVICES</a>
+       <a href="#" class="nav4">PROJECTS</a>
+       <a href="#" class="nav5">CONTACT</a>
+       <a href="#" class="resume__link">Download Resume</a>
        <a href="javascript:void(0);" class="icon" onclick="showNavBar()"><i class="fas fa-times"></i></a>
     
     </nav>
@@ -36,6 +38,7 @@
     <section id="header">
        <div class="header__container">
         <div class="header__body">
+         <div class="header__wrapper">
            <h1 class="header__heading1">Frontend Web Developer</h1>
            <h2 class="header__heading2">Jennifer Doe</h2>
            <p class="header__para">I am currently a Frontend web developer with 5+ 
@@ -44,13 +47,15 @@
            </p>
            <div class="header__icons">
             <p><span><i class="fas fa-envelope-square"></i></span> jenniferdoe@gmail.com</p>
-            <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
-        </div>
-        </div>
-           
-           <div class="header__img">
-               <img src="./img/jennifer-doe.png" alt="">
+            <p class="second__paraicon"><span><i class="fas fa-phone"></i></span>+25476752595747</p>
            </div>
+        </div>
+
+         <div class="header__img">
+                <img src="./img/jennifer-doe-right-pose.png" alt="">
+          </div>
+        </div>
+    
        </div>
 
     </section>
@@ -58,10 +63,15 @@
     <section id="aboutme__sect">
         <div class="aboutme__container">
          <div class="aboutme__body">
+            <div class="aboutme__img">
+                <img src="./img/jennifer-doe.png" alt="">
+          </div>
+        <div class="aboutme__wrapper">
             <h2 class="aboutme__heading2">ABOUT ME</h2>
             <p class="aboutme__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit urna vel condimentum varius in enim aliquam. Massa varius posuere nisl amet nunc non odio. Cum sollicitudin
                  commodo vel integer morbi tempor. Nunc erat facilisis penatibus </p>
             <button class="aboutme__btn">Download Resume</button>
+          </div>
          </div>
         </div>
     </section>
@@ -150,40 +160,46 @@
     <section id="contact__sect">
         <div class="contact__container">
           <div class="contact__body">
-            <h2 class="contact__heading2">REACH OUT</h2>
-            <p class="contact__para">Have a question or want to work together?</p>
-            <div class="form__wrapper">
-                <form>
-                    <div>
-                        <input type="text" name="fullname" id="fullName" placeholder="Your Name">
-                    </div>
-
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Your Email">
-                    </div>
-
-                    <div>
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                    </div>
-
-                    <div>
-                        <textarea name="comment" id="comment cols="30" rows="10" placeholder="Your Message"></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" id="submit" value="SUBMIT">
-                    </div>
+              <div class="reachout__wrapper">
+                <h2 class="contact__heading2">REACH OUT</h2>
+           
+                <p class="contact__para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fames etiam nulla pharetra, dui aliquam nascetur.</p>
                 
-                </form>
-            </div>
-
-            <p class="contact__para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fames etiam nulla pharetra, dui aliquam nascetur.</p>
-            
-            <div class="contact__info">
-              <p><span><i class="fas fa-envelope-square"></i></span>jenniferdoe@gmail.com</p>
-              <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
-              <p><span><i class="fas fa-map-marker-alt"></i></span>Nairobi, Kenya</p>
-            </div>
+                <div class="contact__info">
+                  <p><span><i class="fas fa-envelope-square"></i></span>jenniferdoe@gmail.com</p>
+                  <p><span><i class="fas fa-phone"></i></span>+25476752595747</p>
+                  <p><span><i class="fas fa-map-marker-alt"></i></span>Nairobi, Kenya</p>
+                </div> 
+              </div>
+              <div class="mainform__wrapper">
+                <p class="contact__para">Have a question or want to work together?</p>
+                <div class="form__wrapper">
+                    <form>
+                        <div>
+                            <input type="text" name="fullname" id="fullName" placeholder="Your Name">
+                        </div>
+    
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+    
+                        <div>
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+    
+                        <div>
+                            <textarea name="comment" id="comment cols="30" rows="10" placeholder="Your Message"></textarea>
+                        </div>
+    
+                        <div>
+                            <input type="submit" id="submit" value="SUBMIT">
+                        </div>
+                    
+                    </form>
+                </div>
+    
+              </div>
+          
           </div>
         </div>
 

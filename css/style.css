@@ -18,7 +18,7 @@ body {
 .topNavBar a {
     color: #FFFFFF;
     float: left;
-    font-family: Roboto;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -173,7 +173,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 10px;   
+    padding: 50px 10px;   
 }
 
 .service__heading2 {
@@ -207,21 +207,27 @@ body {
 }
 
 .services .iconify {
-    color: #9B51E0;
-    font-size: 2.5rem;
-    margin: 20px 0;
+    color: #ffffff;
+    border-radius: 100%;
+    background: #0F0F0F;
+    border: 5px solid #9B51E0;
+    box-sizing: border-box;
+    font-size: 7rem;
+    padding: 28px; 
+    margin: 20px 0; 
 }
 
 /*project section css*/
 .project__container {
-    margin-bottom: 50px;   
+    margin-bottom: 50px; 
+    margin-top: 50px;  
 }
 
 .project__body {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 20px;  
+    padding: 50px 20px;  
 }
 
 .project__heading2 {
@@ -241,11 +247,18 @@ body {
     padding: 20px 10px;   
 }
 
+.para__active {
+    color: #9B51E0;
+}
+
 .project__para {
+    font-size: 20px;
     text-align: center;
     padding: 10px 0;
     word-spacing: 20px;
+    margin: 40px 0;
 }
+
 .slider__wrapper {
     width: 100%;
     height: auto;
@@ -446,7 +459,7 @@ input[type="submit"] {
     .topNavBar a{
         display: none;
     }
-
+    
     .topNavBar a.active {
         color: #9B51E0;
     }
@@ -457,7 +470,8 @@ input[type="submit"] {
         display: block;
         
     }
-
+    
+  
     .topNavBar.responsive {
         position: relative;
     }
@@ -487,5 +501,23 @@ input[type="submit"] {
 
 /*media query for desktop view*/
 @media screen and (min-width: 992px) {
+    .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
 
+    .service__heading2 {
+        font-size: 52px;
+    }
+
+    .project__heading2 {
+        font-size: 52px; 
+    }
+
+    .project__para {
+        font-size: 32px;
+        word-spacing: 300;
+    }
 }

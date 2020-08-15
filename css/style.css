@@ -17,23 +17,19 @@ body {
 
 .topNavBar a {
     color: #FFFFFF;
-    float: left;
-    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
     padding: 15px 16px;
     text-align: center;
     text-decoration: none; 
-   
+ 
 }
 
-.topNavBar .icon {
-    display: none;
-}
+
 
 #header {
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 .header__container{
@@ -43,34 +39,36 @@ body {
 .header__body {
     background: #0F0F0F;
     padding: 50px 15px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;  
 }
 
+.header__img {
+    display: none;
+}
+
 .header__heading1 {
     color: #FFFFFF;
-    font-family: inherit;
     font-style: normal;
     font-weight: 300;
     font-size: 26px;
     position: relative;
     padding: 10px 0;
+
 }
 
 .header__heading2 {
-    font-family: inherit;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     color: #FFFFFF;
     padding: 10px 0;
+    
 }
 
 .header__para {
-    color: #FFFFFF;
-    font-family: inherit;
+    color: #ffffff;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -93,8 +91,7 @@ body {
 }
 
 .header__icons p {
-    color: #FFFFFF;
-    font-family: inherit;
+    color: #ffffff;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -108,11 +105,26 @@ body {
 }
 
 .aboutme__body {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     padding: 20px 10px; 
    
+}
+
+.aboutme__img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.aboutme__wrapper {
+    flex: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding-top: 30px;
 }
 
 .aboutme__heading2 {
@@ -126,7 +138,6 @@ body {
 
 .aboutme__para {
     text-align: center;
-    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -142,7 +153,6 @@ body {
     border-radius: 6px;
     border: none;
     color: #ffffff;
-    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -155,6 +165,7 @@ body {
 }
 
 /* service section css*/
+
 #service__sect {
     background: #0F0F0F;
     min-height: 70vh;
@@ -213,6 +224,7 @@ body {
 }
 
 /*project section css*/
+
 .project__container {
     margin-bottom: 50px; 
     margin-top: 50px;  
@@ -296,23 +308,27 @@ body {
     left: 15;
 }
 .item__icon2 {
-    /* margin-top: 100px;
-    margin-left: 20px; */
     position: absolute;
     bottom: 10;
     right: 15;
 }
+
 /*contact section css*/
+
 .contact__container {
     margin-bottom: 50px; 
     text-align: center;  
 }
 
 .contact__body {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    padding: 20px 10px;  
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px; 
+    justify-content: center;
+    align-self: center;
+    text-align: center;
 }
 
 .contact__heading2 {
@@ -340,9 +356,7 @@ body {
     padding: 5px 0;
     
 }
-/* .form__wrapper {
-    margin: 0 auto;
-}  */
+
 form {
     padding: 20px;
 }
@@ -383,6 +397,7 @@ input[type="submit"] {
     width: 140px;
     height: 45px; 
 }
+
 .contact__para2 {
     font-family: inherit;
     font-style: normal;
@@ -398,12 +413,13 @@ input[type="submit"] {
 .contact__info {
     margin: 20px 0;
     padding: 0;
-    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    order: 3;
+
 }
 
 .contact__info > p {
@@ -451,10 +467,11 @@ input[type="submit"] {
     padding-top: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .topNavBar a{
         display: none;
     }
+    
     
     .topNavBar a.active {
         color: #9B51E0;
@@ -469,7 +486,11 @@ input[type="submit"] {
     .topNavBar.responsive {
         position: relative;
     }
-
+   
+    .topNavBar.responsive a.resume__link {
+        display: none;
+    
+    }
     .topNavBar.responsive a:not(:nth-child(6)) {
         border-bottom: 1px solid white;
     }
@@ -502,6 +523,14 @@ input[type="submit"] {
        flex-direction: row-reverse;
        padding: 20px;
    }
+   
+   .topNavBar a {
+       display: inline-block;
+   }
+
+   .topNavBar .icon {
+    display: none;
+}
 
    .topNavBar .active {
        order: 6;
@@ -527,13 +556,15 @@ input[type="submit"] {
     background-color: #9B51E0;
     border-radius: 6px;
     order: 1;
+    display: inline-block;
    }
    
     .topNavBar a {
         font-size: 18px;
-        
     }
+
     /*header css*/
+
    .header__body {
        display: flex;
        flex-direction: row;
@@ -555,13 +586,6 @@ input[type="submit"] {
     line-height: 52px;
    }
 
-   .header__heading1::after {
-       content: "";
-       /* border-bottom: 2px solid red;  */
-       width: 4000px;
-       height: 50px;   
-   }
-
    .header__heading2 {
     font-size: 52px;
     line-height: 61px;
@@ -578,7 +602,9 @@ input[type="submit"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    display: block;
+
+    }
    
     .header__icons {
         display: flex;
@@ -602,8 +628,9 @@ input[type="submit"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
    }
-
+   
    .aboutme__wrapper {
     flex: 50%;
     max-width: 50%;
@@ -689,6 +716,8 @@ input[type="submit"] {
         font-style: normal;
         font-weight: bold;
         font-size: 52px;
+        display: inline-block;
+        padding-bottom: 5px;
         line-height: 18px;
         margin-bottom: 80px;
     }
@@ -698,6 +727,7 @@ input[type="submit"] {
     }
     
     /*footer*/
+
     .footer .fab {
         font-size: 23px;
         padding: 20px 35px 5px 0;
@@ -705,22 +735,3 @@ input[type="submit"] {
     }
 }
 
-@media screen and (max-width: 375px) {
-    .topNavBar a.developer__name, .topNavBar a.resume__link {
-        display: none;
-    }
-
-    .header__img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) { 
-    .topNavBar a.developer__name, .topNavBar a.resume__link {
-        display: none;
-    }
-
-    .header__img {
-        display: none;
-    }
-}

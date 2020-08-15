@@ -28,16 +28,17 @@ body {
 
 
 
-/* #header {
-    min-height: 100vh;
-} */
+#header {
+    background: #0F0F0F;
+}
 
 .header__container{
     margin-bottom: 50px;
+    height: 100vh;
+      
 }
 
 .header__body {
-    background: #0F0F0F;
     padding: 50px 15px;
     font-style: normal;
     font-weight: 300;

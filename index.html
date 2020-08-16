@@ -173,21 +173,25 @@
               <div class="mainform__wrapper">
                 <p class="contact__para">Have a question or want to work together?</p>
                 <div class="form__wrapper">
-                    <form>
-                        <div>
+                    <form id="form">
+                        <div class="form-control">
                             <input type="text" name="fullname" id="fullName" placeholder="Your Name">
+                            <small>Error Message</small>
                         </div>
     
-                        <div>
+                        <div class="form-control">
                             <input type="email" name="email" id="email" placeholder="Your Email">
+                            <small>Error Message</small>
                         </div>
     
-                        <div>
+                        <div class="form-control">
                             <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <small>Error Message</small>
                         </div>
     
-                        <div>
-                            <textarea name="comment" id="comment cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <div class="form-control">
+                            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <small>Error Message</small>    
                         </div>
     
                         <div>

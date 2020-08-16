@@ -55,7 +55,7 @@ body {
     font-weight: 300;
     font-size: 26px;
     position: relative;
-    padding: 10px 0;
+    padding: 15px 0;
 
 }
 
@@ -64,7 +64,7 @@ body {
     font-weight: bold;
     font-size: 32px;
     color: #FFFFFF;
-    padding: 10px 0;
+    padding: 20px 0;
     
 }
 
@@ -399,6 +399,31 @@ input[type="submit"] {
     height: 45px; 
 }
 
+.form-control{
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control.success input, .form-control.success textarea{
+    border-color: #2ecc71;
+}
+
+.form-control.error input, .form-control.error textarea{
+    border-color: #e74c3c;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+    
 .contact__para2 {
     font-family: inherit;
     font-style: normal;
@@ -690,6 +715,7 @@ input[type="submit"] {
         display: none;
     }
 
+   
     .reachout__wrapper {
         flex: 50%;
         max-width: 50%;

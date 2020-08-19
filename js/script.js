@@ -22,6 +22,7 @@ form.addEventListener("submit", (e) => {
 
     checkFormInputs();
 
+
 })
 
 checkFormInputs = () => {
@@ -62,7 +63,12 @@ checkFormInputs = () => {
     }
 
     //show popup
+
+    // var counter = 0;
     
+    // for( var i = 4;  counter < i; i++) {
+    //   alert("Messgage successfully sent!")
+    // }
 
    
 }

@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    
     <!--Custom CSS-->
     <link rel="stylesheet" href="./css/style.css">
-
-     <!--Owl Carousel CSS CDN-->
-     <link rel="stylesheet" href="owl.carousel.min.css">
-     <link rel="stylesheet" href="owl.theme.default.min.css">
-
-     <!--Jquery CDN-->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-     <!--Iconify Design CDN-->
-     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!--Owl Carousel CSS CDN-->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <!--AOS CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Iconify Design CDN-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
      
     <title>Jennifer Doe | Frontend Developer</title>
 </head>
@@ -37,7 +35,7 @@
     <section id="header">
        <div class="header__container">
         <div class="header__body">
-         <div class="header__wrapper">
+         <div class="header__wrapper" data-aos="fade-up-right" data-aos-duration="1500">
            <h1 class="header__heading1">Frontend Web Developer</h1>
            <h2 class="header__heading2">Jennifer Doe</h2>
            <p class="header__para">I am currently a Frontend web developer with 5+ 
@@ -217,8 +215,13 @@
 
     <!--Custom Javascript-->
     <!--Owl Carousel Javascript-->
+    <!--AOS Javascript-->
     <script src="./js/script.js"></script>
     <script src="jquery.js"></script> 
     <script src="owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -91,7 +91,7 @@ isEmail = (email) => {
 }
 
 // Function to check if object is empty
-function isEmpty(obj) {
+isEmpty = (obj) => {
     for(var prop in obj) {
         if(obj.hasOwnProperty(prop))
             return false;

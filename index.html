@@ -21,7 +21,6 @@
 </head>
 <body>
     <nav class="topNavBar" id="myTopNav">
-       <!-- <a href="#" class="developer__name">JENNIFER DOE</a> -->
        <a href="#header" class="active">HOME</a>
        <a href="#aboutme__sect" class="nav2">ABOUT ME</a>
        <a href="#service__sect" class="nav3">MY SERVICES</a>
@@ -35,7 +34,7 @@
     <section id="header">
        <div class="header__container">
         <div class="header__body">
-         <div class="header__wrapper" data-aos="fade-up-right" data-aos-duration="1500">
+         <div class="header__wrapper" data-aos-delay="10" data-aos="slide-up" data-aos-duration="1500">
            <h1 class="header__heading1">Frontend Web Developer</h1>
            <h2 class="header__heading2">Jennifer Doe</h2>
            <p class="header__para">I am currently a Frontend web developer with 5+ 
@@ -48,7 +47,7 @@
            </div>
         </div>
 
-         <div class="header__img">
+         <div class="header__img" data-aos="slide-left" data-aos-duration="1500">
                 <img src="./img/jennifer-doe-right-pose.png" alt="">
           </div>
         </div>
@@ -61,9 +60,9 @@
         <div class="aboutme__container">
          <div class="aboutme__body">
             <div class="aboutme__img">
-                <img src="./img/jennifer-doe.png" alt="">
+                <img src="./img/jennifer-doe.png" alt="" data-aos="zoom-in-right" data-aos-duration="1500">
             </div>
-          <div class="aboutme__wrapper">
+          <div class="aboutme__wrapper"  data-aos-delay="10" data-aos="zoom-in-left" data-aos-duration="1500">
             <h2 class="aboutme__heading2">ABOUT ME</h2>
              <p class="aboutme__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sit urna vel condimentum varius in enim aliquam. Massa varius posuere nisl amet nunc non odio. Cum sollicitudin
                  commodo vel integer morbi tempor. Nunc erat facilisis penatibus </p>
@@ -78,17 +77,17 @@
          <div class="service__body">
             <h2 class="service__heading2">MY SERVICES</h2>
              <div class="services">
-               <div>
+               <div data-aos="zoom-in" data-aos-duration="1200">
                    <span class="iconify" data-icon="bi:code-slash" data-inline="false"></span>
                     <h3>Frontend Development</h3>
                </div>
 
-               <div>
+               <div  data-aos="zoom-in" data-aos-duration="1200">
                     <span class="iconify" data-icon="feather:settings" data-inline="false"></span>
                     <h3>Product Management</h3>
                </div>
 
-               <div>
+               <div  data-aos="zoom-in" data-aos-duration="1200">
                    <span class="iconify" data-icon="ic:baseline-design-services" data-inline="false"></span>
                     <h3>Web Design</h3>
                </div>
@@ -221,7 +220,9 @@
     <script src="owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+          offset: 400,
+      });
     </script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+//preloader function
+window.addEventListener('load', function(){
+    const loader = document.querySelector('.loader');
+    loader.className += ' hidden';
+})
+
 let errors = {};
 let flag;
 
@@ -85,7 +91,7 @@ setSuccessFor = (input) => {
 }
 
 
-//check correct format
+//check correct email format
 isEmail = (email) => {
     return  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }

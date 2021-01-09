@@ -1,9 +1,3 @@
-//preloader function
-window.addEventListener('load', function(){
-    const loader = document.querySelector('.loader');
-    loader.className += ' hidden';
-})
-
 let errors = {};
 let flag;
 
@@ -104,3 +98,4 @@ isEmpty = (obj) => {
     }
     return true;
 }
+
